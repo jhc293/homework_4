@@ -67,7 +67,7 @@ nav a:hover, nav a:focus{
 nav{
   background-color: #ddd;
   padding: 25px 0; 
-  text-align: left;
+  text-align: right;
 }
 
 footer{
@@ -86,6 +86,7 @@ footer{
   grid-row-gap: 15px;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: auto auto auto auto auto;
+
 }
 
 header{
@@ -98,7 +99,6 @@ header{
 
   /*Your Code Here*/
   /*Set background-image to header.jpg */
- 
 
   grid-column: 1 / -1;  /*Can you explain what this does? it means take up the whole row*/
   grid-row: 1 / auto;   /*Can you rewrite it?*/
@@ -145,7 +145,7 @@ header p{
 
 .contact, .contact-image{
     /*Your Code Here*/
-
+    grid-row: 5/auto;
 }
 
 .text-block{
@@ -153,7 +153,7 @@ background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-
+  text-align: center;
 }
 
 
@@ -161,20 +161,24 @@ background-color: rgba(255, 255, 255, .8);
   nav{
     padding: 30px 0px;
     /*Your code here:*/
+    text-align: right;
+  
   }
 
   .container{
     /*Your code here:*/
-    grid-template-columns: 50px auto 500px auto 50px
-    grid-template-rows: 400px 400px 400px 400px 400px
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
   .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
+    grid-column: 3/ span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
     /*Your code here:*/
+    grid-column: 2/ span 2;
   }
 }
 
